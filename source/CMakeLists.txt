@@ -1,5 +1,3 @@
-add_executable(abstract_factroy abstract_factory.cpp)
-add_executable(singleton singleton.cpp)
-add_executable(factory_method factory_method.cpp)
-add_executable(builder builder.cpp)
-add_executable(prototype prototype.cpp)
+add_subdirectory(behavioral)
+add_subdirectory(structural)
+add_subdirectory(creational)
