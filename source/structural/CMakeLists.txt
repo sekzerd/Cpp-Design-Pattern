@@ -1,3 +1,4 @@
 add_executable(adapter adapter.cpp)
 add_executable(bridge bridge.cpp)
 add_executable(composite composite.cpp)
+add_executable(decorator decorator.cpp)
