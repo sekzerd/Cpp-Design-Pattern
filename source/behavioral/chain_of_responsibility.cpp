@@ -98,15 +98,18 @@ int main(const int argc, const char **argv)
     handler *_concrete_handler_A = new concrete_handler_A();
     handler *_concrete_handler_B = new concrete_handler_B();
     handler *_none_handler = new none_handler();
+
     _concrete_handler_A->add_next_handler(_concrete_handler_B);
     _concrete_handler_B->add_next_handler(_none_handler);
 
     request *request_A = new request(request_type::TYPE_A, std::string("request_A"));
     request *request_B = new request(request_type::TYPE_B, std::string("request_B"));
     request *request_none = new request(request_type::NONE, std::string("request_none"));
+
     _concrete_handler_A->handle_request(request_none);
     _concrete_handler_A->handle_request(request_B);
     _concrete_handler_A->handle_request(request_A);
+
     delete _none_handler;
     delete _concrete_handler_B;
     delete _concrete_handler_A;
