@@ -27,8 +27,8 @@ public:
       (*iter)->update(subject);
     }
   }
-  virtual int get_state() const {}
-  virtual void set_state(int state) {}
+  virtual int get_state() const = 0;
+  virtual void set_state(int state) = 0;
   virtual ~subject() { m_observers.clear(); }
 };
 
