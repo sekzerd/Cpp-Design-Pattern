@@ -46,7 +46,6 @@ public:
   }
 };
 int main(const int argc, const char **argv) {
-
   abstraction *abstraction_A =
       new redefined_abstraction(new concrete_implemetor_A());
   abstraction *abstraction_B =
@@ -54,12 +53,9 @@ int main(const int argc, const char **argv) {
 
   abstraction_A->operation();
   abstraction_B->operation();
-  if (abstraction_A) {
-    delete abstraction_A;
-  }
-  if (abstraction_B) {
-    delete abstraction_B;
-  }
+
+  delete abstraction_A;
+  delete abstraction_B;
 
   return 0;
 }

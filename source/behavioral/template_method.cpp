@@ -36,6 +36,7 @@ public:
   }
   ~concrete_class_typeB() {}
 };
+
 int main(const int argc, const char **argv) {
   abstract_class *typeA = new concrete_class_typeA();
   abstract_class *typeB = new concrete_class_typeB();

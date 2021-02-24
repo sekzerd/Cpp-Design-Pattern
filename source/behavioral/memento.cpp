@@ -49,4 +49,6 @@ int main(const int argc, const char **argv) {
   originator.set_memento(caretaker.get_memento());
 
   originator.print_state();
+
+  return 0;
 }

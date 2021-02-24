@@ -112,5 +112,6 @@ int main(const int argc, const char **argv) {
   context.show_state();
   context.open();
   context.show_state();
+
   return 0;
 }

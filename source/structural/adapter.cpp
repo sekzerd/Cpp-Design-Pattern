@@ -19,8 +19,8 @@ public:
 int main(const int argc, const char **argv) {
   target *target = new adapter();
   target->request();
-  if (target) {
-    delete target;
-  }
+
+  delete target;
+
   return 0;
 }
