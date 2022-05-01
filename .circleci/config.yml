@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: "checkout branck"
-          command: "git pull"
+          command: "git pull origin master"
       - run:
           name: "build"
           command: "cmake -B build && cmake --build build"
