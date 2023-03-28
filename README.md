@@ -1,4 +1,4 @@
-# CppDesignPattern
+# design-pattern-cpp
 ## creational
 * abstract_factory 
 * builder 
